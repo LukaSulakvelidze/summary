@@ -3,7 +3,7 @@ body {
     display: flex;
     height: 100vh;
     font-family: 'Red Hat Display', sans-serif;
-    background-image:  url(https://i.postimg.cc/rwHJHCp1/Path-2.png);
+    background-image:  url(./Path\ 2.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -111,7 +111,7 @@ body {
     height: 19px;
     margin-top: 40px;
     margin-right: 24px;
-    color: #382AE1;
+    /* color: #382AE1; */
     cursor: pointer;
     transition:color 0.15s;
 }
