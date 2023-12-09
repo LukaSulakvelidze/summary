@@ -1,105 +1,96 @@
 body {
-    background-color: #E0E8FF;
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+    margin: 0;
     font-family: 'Red Hat Display', sans-serif;
-    background-image:  url(./Path\ 2.png);
+    background-color: #E0E8FF;
+    background-image: url(./Images/Backgorund_mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.back {
-    height: 437px;
-    width: 1440px;
-}
-
-.flex-container {
-    background-color: #FFFFFF;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
-    width: 450px;
-    margin: auto;
-    z-index: 2;
+    width: 87%;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+    background-color: #FFFFFF;
 }
 
-.Mphoto {
+.avatar_image {
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 
-.order {
-    font-size: 28px;
+.header {
+    font-size: 22px;
     font-weight: 900;
     line-height: 37.04px;
     text-align: center;
-    width: 354px;
-    height: 37px;
-    margin: auto;
-    margin-top: 45px; 
+    height: 29px;
+    margin: 32px 0 0;
     color: #1F2E55;
 }
 
 .paragraph {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 25px;
     text-align: center;
-    width: 319px;
-    height: 78px;
-    margin-left: 58px;
-    margin-top: 17px;
+    width: 81%;
+    margin: 16px 0 0;
     color: #717FA6;
 }
 
-.flex-container1 {
+.container2 {
     display: flex;
-    width: 354px;
-    height: 98px;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    height: 81px;
+    margin-top: 20px;
     border-radius: 11px;
     background-color: #F7F9FF;
-    margin-left: 48px;
-    margin-top: 20px;
+}
+
+.container2_item {
+    display: flex;
+    align-items: center;
+    gap: 7%;
+    width: 90%;
+    height: 48px;
 }
 
 .icon-back {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 48px;
     height: 48px;
-    margin-top: 25px;
-    margin-left: 24px;
     border-radius: 50px;
     background-color: #DFE6FB;
 }
 
-.music-icon {
-    margin:auto;
-}
-
 .plan {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 900;
     line-height: 21.17px;
-    height: 21px;
-    width: 117.19047546386719px;
-    margin-left: 20px;
-    margin-right: 68.81px;
-    margin-top: 25px;
+    margin: 0;
     color: #1F2E55;
     display: flex;
     align-content: center;
 }
 
 .price {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 21.17px;
-    height: 21px;
-    width: 92px;
-    margin-left: 20px;
-    margin-bottom:25px;
-    display: flex;
-    align-content: center;  
+    margin: 0;
     color: #717FA6;
 }
 
@@ -107,13 +98,10 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 18.52px;
-    width: 52px;
-    height: 19px;
-    margin-top: 40px;
-    margin-right: 24px;
-    /* color: #382AE1; */
+    margin: 0 0 0 15%;
+    color: #382AE1;
     cursor: pointer;
-    transition:color 0.15s;
+    transition: color 0.15s;
 }
 
 .change:hover {
@@ -122,30 +110,25 @@ body {
 
 .button {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
     height: 50px;
-    width: 354px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 19.85px;
+    color: #FFFFFF;
     border-radius: 11px;
+    border: none;
     background-color: #382AE1;
-    margin-left: 48px;
-    margin-top: 32px;
+    margin: 24px 0 0;
     box-shadow: 0px 20px 20px 0px #382AE131;
     cursor: pointer;
-    transition:background-color 0.15s;
+    transition: background-color 0.15s;
 }
 
 .button:hover {
     background-color: #766CF1;
-}
-
-.button-text {
-    font-size: 15px;
-    font-weight: 900;
-    line-height: 19.85px;
-    width: 150px;
-    height: 20px;
-    display: flex;
-    margin: auto;
-    color: #FFFFFF;
 }
 
 .cancel {
@@ -153,13 +136,73 @@ body {
     font-weight: 900;
     line-height: 19.85px;
     color: #717FA6;
-    margin-left: 176px;
-    margin-top: 32px;
-    margin-bottom: 48px;
+    margin: 24px 0 32px;
     cursor: pointer;
-    transition:color 0.15s;
+    transition: color 0.15s;
 }
 
 .cancel:hover {
     color: #1F2E55;
+}
+
+@media (min-width:375px) {
+    .container {
+        width: 327px;
+    }
+}
+
+@media (min-width:1440px) {
+    body {
+        background: url(./Images/Background_desk.png) no-repeat;
+        background-color: #E0E8FF;
+        background-size: contain;
+    }
+
+    .container {
+        width: 450px;
+    }
+
+    .header {
+        font-size: 28px;
+        margin: 45px 0 0;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        margin: 17px 0 0;
+    }
+
+    .container2 {
+        width: 354px;
+        height: 98px;
+        margin: 20px 0 0;
+    }
+
+    .container2_item {
+        position: relative;
+        gap: 20px;
+    }
+
+    .plan {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+    
+    .change {
+        position: absolute;
+        right: 0;
+        font-size: 14px;
+    }
+
+    button {
+        width: 354px;
+        margin: 32px 0 0;
+    }
+
+    .cancel {
+        margin: 32px 0 48px;
+    }
 }
